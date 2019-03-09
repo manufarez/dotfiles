@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="Avit"
 
 # Useful plugins for Rails development with Sublime Text
 plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
@@ -12,6 +12,8 @@ export HOMEBREW_NO_ANALYTICS=1
 
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Load rbenv if installed
 export PATH="${HOME}/.rbenv/bin:${PATH}"
